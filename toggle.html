@@ -13,14 +13,27 @@
             color: #ddd;
         }
         button {
-            width: 200px; 
-            height: 30px;
+            width: 100px; 
+            height: 45px;
             border-radius: 25px;
             color: #ddd;
             background-color: #181818;
             border: 1px solid #ddd;
+            position: absolute;
+            top: 50%:
+        }
+        button .btn {
+            border-radius: 50%; 
+            width: 35px;
+            height: 35px;
+            background-color: #ddd;
+            position: absolute;
+            left: 5%;
+            top: 50%;
+            transform: translateY(-50%);
         }
         h2 {
+            text-align: center;
             font-size: 100px;
         }
         .box {
@@ -29,9 +42,11 @@
         }
         .colour {
             color: blue;
+            background-color: blue;
         }
         .colour2 {
             color: green;
+            background-color: green;
         }
         .darkmode {
             background-color: #ddd;
@@ -41,7 +56,9 @@
 </head>
 <body>
     <div class="btn_area">
-        <button onclick="darkmode()">click me to turn into dark mode</button>
+        <button onclick="darkmode()">
+            <div class="btn"></div>
+        </button>
     </div>
     <div class="bg">
         <h2>HiHi</h2>
